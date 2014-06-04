@@ -1,0 +1,18 @@
+
+<drawable
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <solid
+        android:color="#BBFFFFFF"
+        android:alpha="50">
+
+    </solid>
+
+    <size
+        android:width="120dp"
+        android:height="120dp"/>
+
+    <stroke android:width="5dp" android:color="#bbdee6d8"/>
+</drawable><!-- From: file:/C:/Users/Erin/Downloads/MyApplication2/app/src/main/res/layout/arrow.xml -->

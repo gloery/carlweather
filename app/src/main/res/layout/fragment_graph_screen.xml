@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.loeryg.myapplication2.app.GraphScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:background="@layout/rectangle"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:id="@+id/graph1border"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/temp24hrs"
+        android:focusableInTouchMode="false"
+        android:layout_alignTop="@+id/graph1" />
+
+    <ImageButton
+        android:scaleType="center"
+        android:id="@+id/graph1"
+        android:layout_width="167sp"
+        android:layout_height="83sp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20sp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/temp24hrs"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentLeft="false" />
+
+    <ImageView
+        android:background="@layout/rectangle"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:id="@+id/graph2border"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/temp24hrs"
+        android:layout_above="@+id/bar24hrs"
+        android:focusableInTouchMode="false" />
+
+    <ImageButton
+        android:scaleType="center"
+        android:id="@+id/graph2"
+        android:layout_width="167sp"
+        android:layout_height="83sp"
+        android:background="@layout/rectangle"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/temp24hrs"
+        android:layout_alignLeft="@+id/graph1"
+        android:layout_alignStart="@+id/graph1"
+        android:paddingTop="0sp"
+        android:layout_marginLeft="1sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp24hrs"
+        android:id="@+id/temp24hrs"
+        android:visibility="gone"
+        android:layout_below="@+id/graph1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:background="@layout/rectangle"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:id="@+id/graph3border"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bar24hrs"
+        android:layout_above="@+id/temp7days"
+        android:focusableInTouchMode="false" />
+
+    <ImageButton
+        android:scaleType="center"
+        android:id="@+id/graph3"
+        android:layout_width="167sp"
+        android:layout_height="83sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_below="@+id/bar24hrs"
+        android:layout_alignLeft="@+id/graph1"
+        android:layout_alignStart="@+id/graph1"
+        android:paddingTop="20sp"
+        android:layout_marginLeft="1sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/barpressure24hrs"
+        android:id="@+id/bar24hrs"
+        android:visibility="gone"
+        android:layout_below="@+id/graph2"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:background="@layout/rectangle"
+        android:layout_width="180sp"
+        android:layout_height="90dp"
+        android:id="@+id/graph4border"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/temp7days"
+        android:layout_above="@+id/hl30days" />
+
+    <ImageButton
+        android:id="@+id/graph4"
+        android:scaleType="center"
+        android:layout_width="167sp"
+        android:layout_height="83sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignLeft="@+id/graph1"
+        android:layout_alignStart="@+id/graph1"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/graph3"
+        android:visibility="gone"
+        android:layout_marginLeft="1sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/temp7days"
+        android:id="@+id/temp7days"
+        android:visibility="gone"
+        android:layout_below="@+id/graph3"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/hl30days"
+        android:id="@+id/hl30days"
+        android:layout_below="@+id/graph4"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>

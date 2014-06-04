@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/warm"
+    android:id="@+id/detaillayout"
+    tools:context="com.loeryg.myapplication2.app.GraphScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="320sp"
+        android:id="@+id/imageView"
+        android:background="#BBFFFFFF"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="25sp"
+        android:layout_above="@+id/detailrefreshbutton"
+        android:layout_marginBottom="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="visible"
+        android:textSize="15sp"
+        android:text="Loading..."
+        android:id="@+id/lastUpdated"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" /> />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wind Speed:   50 mph"
+        android:id="@+id/dspeed"
+        android:visibility="gone"
+        android:layout_below="@+id/dfeels"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_alignRight="@+id/lastUpdated"
+        android:layout_alignEnd="@+id/lastUpdated" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pressure:  30.09 inches"
+        android:id="@+id/bpressure"
+        android:visibility="gone"
+        android:layout_below="@+id/dspeed"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_alignRight="@+id/lastUpdated"
+        android:layout_alignEnd="@+id/lastUpdated" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Relative Humidity: 60.2%"
+        android:id="@+id/humidity"
+        android:visibility="gone"
+        android:layout_below="@+id/bpressure"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_alignRight="@+id/lastUpdated"
+        android:layout_alignEnd="@+id/lastUpdated" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Daily Precip: 0.0 inches"
+        android:visibility="gone"
+        android:id="@+id/preciptoday"
+        android:layout_below="@+id/humidity"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/humidity"
+        android:layout_alignStart="@+id/imageView" />
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Monthly Precip: 0.0 inches"
+        android:id="@+id/precipmonth"
+        android:visibility="gone"
+        android:layout_below="@id/preciptoday"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/humidity"
+        android:layout_alignStart="@+id/imageView" />
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
+        android:text="Yearly Precip: 0.0 inches"
+        android:id="@+id/precipyear"
+        android:layout_below="@id/precipmonth"
+        android:paddingLeft="60sp"
+        android:paddingTop="10sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/humidity"
+        android:layout_alignStart="@+id/imageView" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="30°C"
+        android:visibility="gone"
+        android:id="@+id/detailtemp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20sp"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Feels like 50"
+        android:id="@+id/dfeels"
+        android:layout_below="@+id/detailtemp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°F to °C"
+        android:id="@+id/degreeswap2"
+        android:background="#33B5E5"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:text="Refresh"
+        android:textColor="#FFFFFF"
+        android:background="#33B5E5"
+        android:id="@+id/detailrefreshbutton"
+        android:layout_above="@+id/lastUpdated"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+         />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/lastUpdated"
+        android:layout_alignEnd="@+id/lastUpdated" />
+
+
+</RelativeLayout><!-- From: file:/C:/Users/Erin/Downloads/MyApplication2/app/src/main/res/layout/detail_screen.xml -->

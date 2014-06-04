@@ -1,0 +1,221 @@
+<RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:columnCount="2"
+android:rowCount="2"
+    android:paddingBottom="10sp"
+android:paddingTop="10sp"
+android:orientation="vertical">
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_gravity="top"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:id="@+id/gridLayout"
+        android:paddingTop="50sp">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Loading..."
+            android:id="@+id/dawn"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="50sp" />
+
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Loading..."
+            android:id="@+id/sunset"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="50sp" />
+
+        <TextView
+            android:layout_width="160sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Loading..."
+            android:id="@+id/sunrise"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="60sp" />
+
+        <TextView
+            android:layout_width="160sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Loading..."
+            android:id="@+id/dusk"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginLeft="60sp" />
+
+        <ImageView
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/dawnpicture"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:background="@drawable/dawn" />
+
+        <ImageView
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/sunsetpicture"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:background="@drawable/sunset" />
+
+        <ImageView
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/sunrisepicture"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:background="@drawable/sunrise" />
+
+        <ImageView
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/duskpicture"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:background="@drawable/dusk" />
+    </GridLayout>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_marginTop="220sp"
+        android:paddingTop="50sp">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Loading..."
+            android:id="@+id/newMoonDate"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="50sp" />
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Loading..."
+            android:id="@+id/fullMoonDate"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="50sp" />
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Loading..."
+            android:id="@+id/waxingMoonDate"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="100sp" />
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Loading..."
+            android:id="@+id/waningMoonDate"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginLeft="100sp" />
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/waxingMoon"
+            android:src="@drawable/waxingmoon2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:layout_gravity="top"
+            android:layout_marginLeft="100sp" />
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/newMoon"
+            android:src="@drawable/newmoon2"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:layout_gravity="top"
+            android:layout_marginLeft="50sp" />
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/waningMoon"
+            android:src="@drawable/waningmoon2"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:layout_gravity="top"
+            android:layout_marginLeft="100sp" />
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/fullMoon"
+            android:src="@drawable/fullmoon2"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:layout_gravity="top"
+            android:layout_marginLeft="50sp" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/mooncycles"
+        android:id="@+id/mooncycles"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Daylight Phases"
+        android:id="@+id/daylighttext"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

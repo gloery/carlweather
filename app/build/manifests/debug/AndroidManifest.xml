@@ -1,0 +1,20 @@
+<!-- From: file:/C:/Users/Erin/Downloads/MyApplication2/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.loeryg.myapplication2.app">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.loeryg.myapplication2.app.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.loeryg.myapplication2.app.MainActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/title_activity_graph" android:name="com.loeryg.myapplication2.app.GraphActivity">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
