@@ -6,4 +6,4 @@ A weather service for Carleton College built on the Android platform. Currently,
 ===========
 TO RUN
 ===========
-On the device you wish to run the application on, download the project .apk file (located in /app). Then follow instructions to install.
+On the device you wish to run the application on, download the project .apk file (located in /app/app.apk). Then follow instructions to install.
